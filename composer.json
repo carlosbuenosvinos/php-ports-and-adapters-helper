@@ -11,5 +11,13 @@
             "name": "Carlos Buenosvinos",
             "email": "hi@carlos.io"
         }
-    ]
+    ],
+    "config": {
+        "bin-dir": "bin/"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    }
 }
