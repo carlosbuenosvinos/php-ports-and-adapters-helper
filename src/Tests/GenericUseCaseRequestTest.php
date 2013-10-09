@@ -50,9 +50,11 @@ class GenericUseCaseRequestTest extends \PHPUnit_Framework_TestCase
 
         $request = $this->buildResponse();
         $this->assertFalse($request->hasValue($name));
+        $this->assertEmpty($request->getValues());
 
         $request->setValue($name, $value);
         $this->assertTrue($request->hasValue($name));
+        $this->assertNotEmpty($request->getValues());
 
         $this->assertSame($value, $request->getValue($name));
     }
