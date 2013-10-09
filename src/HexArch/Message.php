@@ -51,9 +51,9 @@ abstract class Message
     /**
      * Return the value for a specific name
      *
-     * @param $name
-     * @param  null $defaultValue
-     * @return null
+     * @param string $name
+     * @param mixed  $defaultValue
+     * @return mixed
      */
     public function getValue($name, $defaultValue = null)
     {
@@ -61,7 +61,7 @@ abstract class Message
     }
 
     /**
-     * Return all values dictionary
+     * Return all values within the dictionary
      *
      * @return array
      */
